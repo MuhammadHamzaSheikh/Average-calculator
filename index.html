@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="maindiv">
+        <h1 class="heading">Average Calculator</h1>
+        <div class="cantner">
+            <form onsubmit="Calculate();return false">
+                <div class="flex">
+                    <p for="islamiyat">islamiyat</p>
+                    <input type="number" id="islamiyat" class="gap" min="1" required />
+                    <br />
+                </div>
+                <div class="flex">
+                    <p for="Urdu">Urdu</p>
+                    <input type="number" id="Urdu" class="gap" min="1" required />
+                    <br />
+                </div>
+
+                <div class="flex">
+                    <p for="English">English</p>
+                    <input type="number" id="English" class="gap" min="1" required />
+                    <br />
+                </div>
+
+                <div class="flex">
+                    <p for="Math">Math</p>
+                    <input type="number" id="Math" class="gap" min="1" required />
+
+                    <br />
+                </div>
+
+                <div class="buttonss">
+                    <button type="submit" class="button">Calculate</button>
+                    <button type="button" class="button" onclick="resetvalu()">
+              Reset
+            </button>
+                </div>
+            </form>
+            <br />
+            <h1 id="Result"></h1>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.23/dist/sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="ap.js"></script>
+</body>
+
+</html>
